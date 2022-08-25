@@ -1,0 +1,12 @@
+# ---------------------------------------
+# "XUI"
+# Created by Vikas Kumar (@viktapas)
+# © KredX (Minions Ventures Pvt. Ltd.)
+# ---------------------------------------
+
+node_modules
+dist
+.vscode
+storybook-static
+.DS_Store
+yarn-error.log
