@@ -1,6 +1,6 @@
 {
   "name": "@vikaskredx/test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "test",
   "private": false,
   "scripts": {
@@ -22,13 +22,16 @@
   },
   "homepage": "https://github.com/vikasKredX/test#readme",
   "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
+    "react": "*",
+    "react-dom": "*"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  }
 }
