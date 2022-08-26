@@ -14,6 +14,11 @@ const packageJson = require("./package.json");
 
 export default [
   {
+
+    external: [
+      'react',
+      'react-dom',
+    ],
     input: "src/index.ts",
     output: [
       {
@@ -33,10 +38,11 @@ export default [
       typescript({
         tsconfig: "./tsconfig.json",
         exclude: [
-          "**/__tests__",
+          "**/__tests__/**",
           "**/*.test.tsx",
-          "**/stories",
+          "**/stories/**",
           "**/*.stories.tsx",
+          "**/assets/fonts/**"
         ]
        }),
        getBabelOutputPlugin({
@@ -48,5 +54,5 @@ export default [
     input: "dist/esm/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-  }
+  },
 ];

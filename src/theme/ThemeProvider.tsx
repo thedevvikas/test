@@ -7,7 +7,7 @@
 import React, { ReactNode } from "react"
 import { MantineProvider, MantineTheme, MantineThemeOverride } from '@mantine/core';
 import { themeOverride } from "./theme.config";
-import { CustomFonts } from "../utils/customFonts";
+// import { CustomFonts } from "../utils/customFonts";
 
 interface IThemeProvider {
   children: any;
@@ -25,7 +25,7 @@ const KredXThemeProvider = (props:IThemeProvider):ReactNode => {
         theme={{...themeOverride, ...theme}}
         withGlobalStyles={withGlobalStyles}
         withNormalizeCSS={withNormalizeCSS}>
-          {customFonts && <CustomFonts/>}
+          {/* {customFonts && <CustomFonts/>} */}
         {children}
       </MantineProvider>
     );

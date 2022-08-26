@@ -1,37 +1,73 @@
 {
   "name": "@vikaskredx/test",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "test",
-  "private": false,
   "scripts": {
     "rollup": "rollup -c",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook",
-    "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+    "storybook:build": "build-storybook"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vikasKredX/test.git"
   },
   "keywords": [],
-  "author": "vikasKredX",
-  "license": "MIT",
+  "author": "KredX",
+  "license": "UNLICENSED",
+  "private": false,
   "bugs": {
     "url": "https://github.com/vikasKredX/test/issues"
   },
   "homepage": "https://github.com/vikasKredX/test#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@mantine/core": "^5.2.3",
+    "@mantine/hooks": "^5.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@rollup/plugin-url": "^7.0.0",
+    "@storybook/addon-actions": "^6.5.10",
+    "@storybook/addon-essentials": "^6.5.10",
+    "@storybook/addon-interactions": "^6.5.10",
+    "@storybook/addon-links": "^6.5.10",
+    "@storybook/builder-webpack4": "^6.5.10",
+    "@storybook/manager-webpack4": "^6.5.10",
+    "@storybook/react": "^6.5.10",
+    "@storybook/testing-library": "0.0.13",
+    "@testing-library/react": "^12.1.4",
+    "@types/jest": "^28.1.7",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^16.9.16",
+    "babel-jest": "^28.1.3",
+    "babel-loader": "^8.2.5",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^28.1.3",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rollup": "^2.78.1",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "storybook-addon-mantine": "^1.1.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  },
   "peerDependencies": {
-    "react": "*",
-    "react-dom": "*"
+    "react": ">=16",
+    "react-dom": ">=16"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "publishConfig": {
-    "access": "public"
-  }
+  "types": "dist/index.d.ts"
 }
